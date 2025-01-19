@@ -1,22 +1,13 @@
-import './App.css'
-import {useState} from "react";
+import PaginationComponent from "./components/Pagination/PaginationComponent.tsx";
+import Some from "./components/some/Some.tsx";
 
-function App() {
-
-    let [counter, setCounter] = useState(0);
+const App= () => {
     return (
-        <>
-            <h2>{counter}</h2>
-            <button onClick={() => {
-              setCounter(++counter);
-            }}>increment
-            </button>
-            <button onClick={() => {
-               setCounter(--counter);
-            }}>decrement
-            </button>
-        </>
-    )
-}
+        <div>
+            <Some/>
+            <PaginationComponent/>
+        </div>
+    );
+};
 
-export default App
+export default App;
